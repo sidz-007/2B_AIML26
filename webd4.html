@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        form {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: rgb(12, 62, 95);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <form align="center">
-        <label>Name: <input type="text" id="name"></label><br>
-        <label>Mobile: <input type="text" id="number"></label><br>
-        <label>Email: <input type="text" id="email"></label><br>
-        <label>Password: <input type="password" id="password"></label><br>
-        <label>Confirm Password: <input type="password" id="cpassword"></label><br>
-        <input type="button" value="Submit" onclick="validate()">
+
+    <form align="center" onsubmit="return validate()">
+
+        <label>
+            Name:
+            <input type="text" id="name">
+        </label>
+
+        <label>
+            Mobile:
+            <input type="text" id="number">
+        </label>
+
+        <label>
+            Email:
+            <input type="text" id="email">
+        </label>
+
+        <label>
+            Password:
+            <input type="password" id="password">
+        </label>
+
+        <label>
+            Confirm Password:
+            <input type="password" id="cpassword">
+        </label>
+
+        <input type="submit" value="Submit">
+
     </form>
+
+    <script src="webd4.js"></script>
+
 </body>
 </html>
