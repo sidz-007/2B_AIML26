@@ -51,21 +51,45 @@
 // document.write("<br>");
 // s2.display();
 
-class student{
-    constructor (name, pincode){
-        this.name = name;
-        this.pincode = pincode;
+// class student{
+//     constructor (name, pincode){
+//         this.name = name;
+//         this.pincode = pincode;
+//     }
+//     display(){
+//         document.write(this.name + " " + this.pincode);
+//     }
+// }
+// let s1 = new student("Sheeraz", 242001);
+// let s2 = new student("Vikas", 201204);
+// delete s1.pincode;
+// s1.display();
+// document.write("<br>"); 
+// s2.display();
+
+let product ={
+    productId: 101,
+    productName: "Laptop",
+    price: 50000,
+    quantity: 2,
+    totalPrice: function(){
+        return this.price * this.quantity;
+    },
+    updateQuantity: function(newQuantity){
+        this.quantity = newQuantity;
+    },
+    displayProductDetails: function(){
+        document.write("Product ID: " + this.productId + "<br>");
+        document.write("Product Name: " + this.productName + "<br>");
+        document.write("Price: " + this.price + "<br>");
+        document.write("Quantity: " + this.quantity + "<br>");
+        document.write("Total Price: " + this.totalPrice() + "<br>");
     }
-    display(){
-        document.write(this.name + " " + this.pincode);
-    }
-}
-let s1 = new student("Sheeraz", 242001);
-let s2 = new student("Vikas", 201204);
-delete s1.pincode;
-s1.display();
-document.write("<br>"); 
-s2.display();
+};
+product.displayProductDetails();
+product.updateQuantity(5);
+document.write("<br>After updating quantity:<br>");
+product.displayProductDetails();
     </script>
 </body>
 </html>
