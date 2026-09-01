@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+// let student = {
+//     first: "Mohd",
+//     last : "Sheeraz",
+//     city : "Shhajahanpur",
+//     pincode : 242001,
+//     fullname : function(){
+//         document.write(this.first + " " + this.last);
+//     },
+//     subject : ["Maths", "Science", "English"],
+// }
+// console.log(student.first);
+// console.log(student.last);
+// console.log(student.fullname());
+// console.log(student.subject[0]);
+
+// let student = new Object();
+// student.first = "Mohd";
+// student.last = "Sheeraz";
+// student.salary = function(){
+//     document.write("Salary is 10000");
+// };
+// console.log(student.first);
+// console.log(student.last);
+// student.salary();
+
+// function student(name, Rollno, pincode, city){
+//     this.name = name;
+//     this.Rollno = Rollno;
+//     this.pincode = pincode;
+//     this.city = city;
+//     this.display = function(){
+//         document.write(this.name + " " + this.Rollno + " " + this.pincode + " " + this.city);
+//     }
+// }
+// let s1 = new student("Sheeraz", 101, 242001, "Shahjahanpur");
+// let s2 = new student("Vikas", 102, 201204, "Modi Nagar");
+// document.write(s1.name + " " + s1.Rollno + " " + s1.pincode + " " + s1.city);
+// document.write("<br>");
+// document.write(s2.name + " " + s2.Rollno + " " + s2.pincode + " " + s2.city);
+// s1.display();
+// document.write("<br>");
+// s2.display();
+
+// class student{
+//     constructor (name, pincode){
+//         this.name = name;
+//         this.pincode = pincode;
+//     }
+//     display(){
+//         document.write(this.name + " " + this.pincode);
+//     }
+// }
+// let s1 = new student("Sheeraz", 242001);
+// let s2 = new student("Vikas", 201204);
+// delete s1.pincode;
+// s1.display();
+// document.write("<br>"); 
+// s2.display();
+
+let product ={
+    productId: 101,
+    productName: "Laptop",
+    price: 50000,
+    quantity: 2,
+    totalPrice: function(){
+        return this.price * this.quantity;
+    },
+    updateQuantity: function(newQuantity){
+        this.quantity = newQuantity;
+    },
+    displayProductDetails: function(){
+        document.write("Product ID: " + this.productId + "<br>");
+        document.write("Product Name: " + this.productName + "<br>");
+        document.write("Price: " + this.price + "<br>");
+        document.write("Quantity: " + this.quantity + "<br>");
+        document.write("Total Price: " + this.totalPrice() + "<br>");
+    }
+};
+product.displayProductDetails();
+product.updateQuantity(5);
+document.write("<br>After updating quantity:<br>");
+product.displayProductDetails();
+    </script>
+</body>
+</html>
