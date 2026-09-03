@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// let firstName = "John";
+// let lastName = "Doe";
+// console.log("First Name: ", firstName);
+// console.log("Last Name: ", lastName);
+// console.log(`My first name is ${firstName} `);
+// console.log(`My name is ${firstName} ${lastName}`);
+// function fullName(firstName, lastName) {
+//     // console.log(firstName);
+//     // console.log(lastName);
+//     return `${firstName} ${lastName}`;
+// }
+// fullName = (firstName, lastName) => `${firstName} ${lastName}`;
+// let name = `Hello, my name is ${fullName(firstName, lastName)}`;
+// console.log(name);
+// pattern = (n) => {
+//     for (let i = 1; i <= n; i++) {
+//         let row = '';
+//         for (let j = 1; j <= i; j++) {
+//             row += '* ';
+//         }
+//         console.log(row);
+//     }
+// }
+// pattern(5);
+function sum(first,...values) {
+    let total = 0;
+    for (let n of values) {
+        total += n;
+    }
+    console.log("Name: ", first);
+    console.log("Sum: ", total);
+}
+sum("Mohd", 1, 2, 3, 4, 6);
+
+    </script>
+</body>
+</html>
