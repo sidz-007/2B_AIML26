@@ -24,21 +24,32 @@
 // console.log(data.name);
 // console.log(data.rollNo);
 
-let F="firstName";
-let L="lastName";
-let data={
-    [F] : "Mohd",
-    [L] : "Sheeraz",
-    show(){
-    console.log(this.firstName);
-    console.log(this.lastName);
-}
-};
+// let F="firstName";
+// let L="lastName";
+// let data={
+//     [F] : "Mohd",
+//     [L] : "Sheeraz",
+//     show(){
+//     console.log(this.firstName);
+//     console.log(this.lastName);
+// }
+// };
 
-console.log(data.show());
-// console.log(data.firstName);
-// console.log(data.lastName);
+// console.log(data.show()); // can also be called as data.show() or data['show']() or data['show']
+// // console.log(data.firstName);
+// // console.log(data.lastName);
 
+    let data = ["Sheeraz", 115, 242001, "Ghaziabad"];
+    // let name = data[0];
+    // let rollNo = data[1];
+    // let pinCode = data[2];
+    // let city = data[3];
+    // Destructuring
+    let[name, rollNo, pinCode, city] = data;
+    console.log(name);
+    console.log(rollNo);
+    console.log(pinCode);
+    console.log(city);
     </script>
 </body>
 </html>
