@@ -39,14 +39,24 @@
 // // let  s3 = new student ("Ahmed", 102, 2022);
 // // s3.display();
 class Hello{
-    constructor (){
-        console.log("Hello, constructor");
-    }
+//     constructor (){
+//         console.log("Hello, constructor");
+//     }
+// }
+// class Hi extends Hello{
+// constructor (){
+//     super(); // super() is used to call the constructor of the parent class (Hello) from the child class (Hi). It allows the child class to inherit properties and methods from the parent class. In this case, it ensures that when an instance of Hi is created, the constructor of Hello is also executed, printing "Hello, constructor" to the console.
+//     console.log("Hi, constructor");
+// }
+info(){
+    console.log("Info Hello");
+}
 }
 class Hi extends Hello{
-constructor (){
-    super();
-    console.log("Hi, constructor");
-}
+    info(){
+        super.info();
+        console.log("Info Hi");
+    }
 }
 let h1 = new Hi();
+h1.info();
